@@ -13,4 +13,5 @@ The community version of *Project Elyria*, a PHP/Laravel-based *Looking-Glass* s
 * Run `composer install` to install the dependencies required.
 * Make sure that the `bootstrap/cache` and `storage` directories are writable by the web server.
 * Run `php artisan key:generate` and `php artisan migrate` to generate application keys and prime the database for usage.
-* Finally, you'll need to setup a cronjob and queued worker (task runner). Refer to [this guide of setting up supervisord](https://laravel.com/docs/5.1/queues#supervisor-configuration) and [this guide of setting up the scheduler](https://laravel.com/docs/5.5/scheduling#introduction) for more information. THIS IS VERY IMPORTANT!
+* Finally, you'll need to setup a cronjob and queued worker (task runner). Refer to [this guide of setting up supervisord](https://laravel.com/docs/5.1/queues#supervisor-configuration) and [this guide of setting up the scheduler](https://laravel.com/docs/5.5/scheduling#introduction) for more information. **THIS IS VERY IMPORTANT!**
+* Oh, and don't forget to point your webserver to the app's public directory and create rewrites. [See this guide for more info.](https://laravel.com/docs/5.5/installation#web-server-configuration)
