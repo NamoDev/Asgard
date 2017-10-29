@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "NamoDev/Asgard",
+    "description": "The PHP/Laravel-based looking glass server",
+    "keywords": ["looking glass"],
     "license": "MIT",
     "type": "project",
     "require": {
