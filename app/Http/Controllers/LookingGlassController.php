@@ -28,7 +28,7 @@ class LookingGlassController extends Controller
 
                 // Valid test type?
                 $testType = $request->input("type");
-                $allowableTestTypes = ["ping", "traceroute", "mtr"];
+                $allowableTestTypes = ["ping", "traceroute", "mtr", "v4_suite"];
 
                 if(in_array($testType, $allowableTestTypes)){
 

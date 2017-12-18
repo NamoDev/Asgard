@@ -37,6 +37,7 @@
                             <option value="traceroute" selected>IPv4 Traceroute</option>
                             <option value="ping">IPv4 Ping</option>
                             <option value="mtr">IPv4 MTR</option>
+                            <option value="v4_suite">IPv4 All Tests</option>
                         </select>
                     </div>
                     <br />

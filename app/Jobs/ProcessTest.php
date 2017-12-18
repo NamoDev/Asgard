@@ -59,6 +59,14 @@ class ProcessTest implements ShouldQueue
                 $theRequest->result = $mtrResult;
             break;
 
+            case "v4_suite":
+                // Complete IPv4 test suite
+                $traceResult = shell_exec("traceroute $testDestination");
+                $pingResult = shell_exec("ping -c 4 $testDestination");
+                $mtrResult = shell_exec("mtr -r -c 2 $testDestination --report-wide");
+                $theRequest->result = "Traceroute:\n" . $traceResult . "\n\nPing:\n" . $pingResult . "\n\nMTR:\n" . $mtrResult;
+            break;
+
         }
 
         $theRequest->done = 1;
