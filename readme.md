@@ -4,7 +4,7 @@ The community version of *Project Elyria*, a PHP/Laravel-based *Looking-Glass* s
 ### Requirements
 * PHP >= 7.0.0
 * OpenSSL, PDO, Mbstring, Tokenizer and XML PHP extensions
-* A compatible backend database: either MySQL, PostgreSQL or Microsoft SQL Server. SQLite should also work, but that has not been tested.
+* A compatible backend database: either MySQL, PostgreSQL or Microsoft SQL Server. (SQLite should also work for those cases that you'd like to avoid having to use an external database, but that is untested)
 * The Composer dependency manager
 
 ### Installation
